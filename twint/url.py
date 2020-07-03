@@ -22,7 +22,7 @@ def _formatDate(date):
 
 async def Favorites(username, init):
     logme.debug(__name__+':Favorites')
-    url = f"{mobile}/{username}/favorites?lang=en"
+    url = f"{mobile}/{username}/likes?lang=en"
 
     if init != '-1':
         url += f"&max_id={init}"
